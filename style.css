@@ -1,0 +1,18 @@
+*{
+     background-color: rgb(120, 96, 36); 
+    color: aliceblue;
+}
+#empty-ip{
+    background-color: aliceblue;
+}
+.Gen{
+    color: black;
+    font-weight: 800;
+}
+#enter-btn{
+    background-color: blue;
+    padding: 10px;
+    border-radius: 8px;
+    color: rgb(180, 96, 96);
+    font-size: 16px;
+}
