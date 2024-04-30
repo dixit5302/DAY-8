@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
         <table border="1">
             <tr>
-               <th>Name</th>
-               <th>Value</th>
+               <th style="background-color: cadetblue;">Number</th>
+               <th style="background-color: rgb(20, 148, 152);">Value</th>
             </tr>
 
             <tr>
-               <td><label for="name">Name</label></td>
-              <td> <input type="text"   size="26"></td>
+               <td>
+                <label for="name">Name</label>
+            </td>
+              <td> <input id="empty-ip" type="text" size="26"></td>
             </tr>
 
             <tr>
                 <td>Sex</td>
                 <td><input type="radio" id="men" name="radio">
-                    <label for="men" >Male</label><br>
+                    <label for="men" class="Gen" >Male</label><br>
                 <input type="radio" id="wmen" name="radio">
-                <label for="wmen" >Female</label></td>
+                <label for="wmen" class="Gen">Female</label></td>
              </tr>
 
             <tr>
                 <td>Eye color</td>
-                <td><select>
-                    <option>green</option>
-                    <option>red</option>
-                    <option>yellow</option>
+                <td><select style="background-color: rgb(83, 94, 83);">
+                    <option style="background-color: darkgreen;">green</option>
+                    <option style="background-color: rgb(211, 19, 19);">red</option>
+                    <option style="background-color: rgb(216, 228, 45);">yellow</option>
                 </select></td>
             </tr>
             <tr>
@@ -36,10 +40,10 @@
                 <input type="checkbox">Over 200 pounds</td>
             </tr>
             <tr>
-                <td colspan="2">Describe your athletic ability <br><textarea rows="5" cols="40"></textarea>  
+                <td colspan="2">Describe your athletic ability <br><textarea rows="5" cols="40" style="background-color: rgb(230, 227, 224); color: black;"></textarea>  
                 </td>
             </tr>
-            <th colspan="2"><input type="button" value="Enter my information"></th>
+            <th colspan="2"><input type="button" value="Enter my information" id="enter-btn"></th>
         </table>
     </body>
 </html>

@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+<style>
+#main{
+  display: block;
+  text-align: center;
+}
+
+#workshop{
+  color: darkblue;
+}
+</style>
+
+    </head>
     <body>
       <form>
+        <fieldset style="background-color: rgb(114, 61, 61); color: aliceblue;">
         <table>
-            <tr>
-                <th>Workshop Resgistration</th>
+            <tr id="main">
+                <th id="workshop">Workshop Resgistration</th>
                 <td><select>
                     <option value="more">More Options</option>
                     <option value="one">1</option>
@@ -14,8 +27,8 @@
                   </select></td>
             </tr>
         </table>
-        <p><u>Register now while the seats are available</u></p>
-        <table>
+        <p><u style="color: rgba(169, 212, 180, 0.837);">Register now while the seats are available</u></p>
+        <table style="color: rgb(114, 163, 17);">
             <tr>
                 <td><label for="fname">First Name</label></td>
                 <td><input type="text" id="fname"></td>
@@ -76,8 +89,9 @@
             <td><input type="text" id="phone"></td>
           </tr>
         </table>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <input style="background-color: red; color: aliceblue;" type="submit" value="Submit">
+        <input style="background-color: red; color: aliceblue;" type="reset" value="Reset">
+        </fieldset>
       </form>
     </body>
 </html>
